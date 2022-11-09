@@ -1,0 +1,68 @@
+/* Add CSS here */
+:root {
+  --card-item-border: 5px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0;
+}
+
+.brand-kit-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.brand-kit-card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.brand-kit-head {
+  height: 70%;
+  background-color: lightgray;
+  border-radius: var(--card-item-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.color-pallete {
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: aqua;
+  border-bottom-left-radius: var(--card-item-border);
+  border-bottom-right-radius: var(--card-item-border);
+  display: flex;
+}
+
+.color-pallete div {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  background-color: var(--pallete-color);
+}
+
+.brand-kit-head .image-container {
+  height: 85%;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-kit-head img {
+  object-fit: contain;
+  max-height: 75%;
+}
